@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 
 
 # define exchange
-exchange = ccxt.binance()
+exchange = ccxt.coinbase()
 
 
 # needed functions for useability
 
-def get_ticker_list(exchange=ccxt.binance()):
+def get_ticker_list():
             
              
 
