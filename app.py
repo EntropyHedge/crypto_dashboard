@@ -13,7 +13,7 @@ exchange = ccxt.binance()
 
 # needed functions for useability
 
-def get_ticker_list():
+def get_ticker_list(exchange=ccxt.binance()):
             
              
 
