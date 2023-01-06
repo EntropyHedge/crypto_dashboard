@@ -2,3 +2,4 @@ ccxt
 numpy
 pandas
 pandas_ta
+matplotlib
