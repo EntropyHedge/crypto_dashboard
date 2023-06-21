@@ -14,13 +14,13 @@ exchange = ccxt.binance()
 # needed functions for useability
 
 def get_ticker_list():
-            list = exchange.fetch_tickers()
+     list = exchange.fetch_tickers()
             
-            k = '/USDT'
-            l = []
-            for i in list:
-                if k in i:
-                    l.append(i)
+     k = '/USDT'
+     l = []
+     for i in list:
+         if k in i:
+            l.append(i)
 
              #sf = exchange.fetch_markets()   
              #a= len(sf)
@@ -29,7 +29,7 @@ def get_ticker_list():
              #for i in range(0,a):
                     #if word in sf[i]['symbol']: 
                         #l.append(sf[i]['symbol']) 
-             return(l)
+     return(l)
 
 
 
