@@ -14,7 +14,8 @@ exchange = ccxt.bybit()
 # needed functions for useability
 
 def get_ticker_list():
-     
+            
+             
 
              sf = exchange.fetch_markets()   
              a= len(sf)
@@ -24,8 +25,6 @@ def get_ticker_list():
                     if word in sf[i]['symbol']: 
                         l.append(sf[i]['symbol']) 
              return(l)
-
-
 
 def get_data(asset,time,exchange):
     bars = exchange.fetch_ohlcv(asset, timeframe=time, limit=10000)
