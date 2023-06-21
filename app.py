@@ -8,28 +8,22 @@ import matplotlib.pyplot as plt
 
 
 # define exchange
-exchange = ccxt.binance()
+exchange = ccxt.bybit()
 
 
 # needed functions for useability
 
 def get_ticker_list():
-     list = exchange.fetch_tickers()
-            
-     k = '/USDT'
-     l = []
-     for i in list:
-         if k in i:
-            l.append(i)
+     
 
-             #sf = exchange.fetch_markets()   
-             #a= len(sf)
-             #word = 'USDT'
-             #l = []
-             #for i in range(0,a):
-                    #if word in sf[i]['symbol']: 
-                        #l.append(sf[i]['symbol']) 
-     return(l)
+             sf = exchange.fetch_markets()   
+             a= len(sf)
+             word = 'USDT'
+             l = []
+             for i in range(0,a):
+                    if word in sf[i]['symbol']: 
+                        l.append(sf[i]['symbol']) 
+             return(l)
 
 
 
