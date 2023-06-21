@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 # define exchange
-exchange = ccxt.bybit()
+exchange = ccxt.binance()
 
 
 # needed functions for useability
